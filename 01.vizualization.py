@@ -11,7 +11,7 @@ import pandas as pd  # обработка данных, CSV file I/O (e.g. pd.re
 
 # подлючим библиотеки для отображения графиков
 import matplotlib.pyplot as plt  #
-import tensorflow as tf  #
+
 import matplotlib
 matplotlib.use('tkagg')
 import tkinter  # библиотека графических окон
@@ -47,7 +47,6 @@ print(train.label.values[41])
 
 
 # Давайте посмотрим на размер набора данных и распределение языков в обучающем наборе.
-
 def load_mnli(use_validation=True):
     result = []
     dataset = load_dataset('multi_nli')
